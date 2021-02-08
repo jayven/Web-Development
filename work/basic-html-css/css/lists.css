@@ -1,0 +1,17 @@
+html {
+  font-family: sans-serif;
+}
+
+.list-title {
+	font: sans-serif;
+}
+
+.item {
+	list-style-type: none;
+	border: 1px solid black;
+	font: sans-serif;
+}
+
+.item li:nth-child(2n+1) {
+	background-color: lightgrey;
+}
