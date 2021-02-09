@@ -1,0 +1,19 @@
+.error h1 {
+	text-shadow: 4px 4px 5px grey;
+}
+
+.error p {
+	font-weight: bold;
+}
+
+.students {
+	float: left;
+}
+
+.cats {
+	float: left;
+}
+
+button {
+	display: block;
+}
