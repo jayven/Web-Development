@@ -6,6 +6,7 @@ const chatWeb = {
       <html>
         <head>
           <title>Chat</title>
+          <link rel="stylesheet" href="chat.css">
         </head>
         <body>
           <div id="chat-app">
@@ -22,7 +23,16 @@ const chatWeb = {
 
   getMessageList: function(chat) {
     return `<ol class="messages">` +
-      // Fill in!
+      Object.values(chat.messages).map( message => `
+        <li>
+          <div class="message">
+            <div class="sender">
+              <span class="username">${message.sender}</span>
+            </div>
+            <p class="message-text">${message.text}</p>
+          </div>
+        </li>
+        `).join('') +
       `</ol>`;
   },
   getUserList: function(chat) {
@@ -37,7 +47,15 @@ const chatWeb = {
     `</ul>`;
   },
   getOutgoing: function() {
-    // Fill in!
+    return `
+    <div class="outgoing">
+      <form action="/sendMessage" method="POST">
+        <input class="new-username" type="text" name="sender" value="" placeholder="Please enter the username"/>
+        <input class="message-send" type="text" name="text" value="" placeholder="Please enter the message"/>
+        <button type="submit">Send!</button>
+      </form>
+    </div>
+    `;
   }
 };
 module.exports = chatWeb;

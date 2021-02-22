@@ -15,7 +15,8 @@ const messages = [
 ];
 
 function addMessage({ sender, text }) {
-  // Fill in!
+    chat.users[sender] = sender;
+    chat.messages.push({ sender, text});
 }
 
 const chat = {

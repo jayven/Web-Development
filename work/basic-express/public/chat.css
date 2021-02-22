@@ -1,0 +1,85 @@
+#chat-app { 
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.display-panel { 
+}
+
+.users { 
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  list-style: none;
+  padding: 20px;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+.messages { 
+
+}
+
+.message { 
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  max-width: 600px;
+}
+
+.message:hover { 
+  background-color: #F5F5DC;
+}
+
+.sender { 
+  font-weight: bolder;
+}
+
+.message-text { 
+  padding-left: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+.outgoing { 
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px 0;
+  border: 2px solid #dedede;
+  text-align: center;
+}
+
+.new-username {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.message-send {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.outgoing button {
+width: 80%;
+  background-color: #FAFAD2;
+  color: black;
+  border-radius: 5px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: bolder;
+}
