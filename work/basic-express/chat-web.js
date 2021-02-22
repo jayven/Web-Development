@@ -49,7 +49,7 @@ const chatWeb = {
   getOutgoing: function() {
     return `
     <div class="outgoing">
-      <form action="/sendMessage" method="POST">
+      <form action="/chat" method="POST">
         <input class="new-username" type="text" name="sender" value="" placeholder="Please enter the username"/>
         <input class="message-send" type="text" name="text" value="" placeholder="Please enter the message"/>
         <button type="submit">Send!</button>
