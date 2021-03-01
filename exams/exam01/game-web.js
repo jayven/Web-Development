@@ -14,18 +14,18 @@ const gameWeb = {
                         <h2>Guessing Word Game</h2>
                     </div>
                     <div class="display-panel">
-                    <div class="rules">
-                        <h3>Game Rules:</h3>
-                        <ul>
-                            <li>Please enter a word to guess the secret word</li>
-                            <li>You need to guess the word depends on the result panel</li>
-                            <li>The game will not care about case-sensitivity.</li>  
-                            <li>Have Fun!</li>
-                        </ul>
-                    </div>
+                        <div class="rules">
+                            <h3>Game Rules:</h3>
+                            <ul>
+                                <li>Please enter a word to guess the secret word</li>
+                                <li>You need to guess the word depends on the result panel</li>
+                                <li>The game will not care about case-sensitivity</li>  
+                                <li>Have Fun!</li>
+                            </ul>
+                        </div>
                         <div class="words">
-                            <h3>Please guess the word from the following word list:</h3>
-                            <p>${words}</p>
+                            <h3>Please guess the word from the following words list:</h3>
+                            <p class="words-list">${words}</p>
                         </div> 
                         <div class="results">
                             ${gameWeb.getGuessedWords(game, userId)}
