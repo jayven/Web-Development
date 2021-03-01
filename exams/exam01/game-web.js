@@ -10,11 +10,19 @@ const gameWeb = {
 
             <body>
                 <div id="game-app">
-                <div class="title">
-                    <h2>Guessing Word Game</h2>
-                </div>
+                    <div class="title">
+                        <h2>Guessing Word Game</h2>
+                    </div>
                     <div class="display-panel">
-                            ${gameWeb.getRule()}
+                    <div class="rules">
+                        <h3>Game Rules:</h3>
+                        <ul>
+                            <li>Please enter a word to guess the secret word</li>
+                            <li>You need to guess the word depends on the result panel</li>
+                            <li>The game will not care about case-sensitivity.</li>  
+                            <li>Have Fun!</li>
+                        </ul>
+                    </div>
                         <div class="words">
                             <h3>Please guess the word from the following word list:</h3>
                             <p>${words}</p>
@@ -28,21 +36,6 @@ const gameWeb = {
                 </div>     
             </body>
         </html>`
-    },
-
-
-    getRule: function() {
-        return `
-            <div class="rules">
-                <h3>Game Rules:</h3>
-                <ul >
-                    <li>Please enter a word to guess the secret word</li>
-                    <li>You need to guess the word depends on the result panel</li>
-                    <li>The game will not care about case-sensitivity.</li>  
-                    <li>Have Fun!</li>
-                </ul>
-            </div>
-    `;
     },
 
     getGameStart: function({ userId, gameOver }) {
