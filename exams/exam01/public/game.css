@@ -1,0 +1,81 @@
+#game-app { 
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  width:100%
+}
+
+.display-panel { 
+}
+
+.rules {
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  list-style: none;
+  padding: 20px;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+.words { 
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  list-style: none;
+  margin: 5px 0;
+  height:100px;
+  padding: 20px;
+    
+}
+
+.words-list {
+  word-wrap: break-word; 
+  word-break: break-all; 
+  overflow: auto;
+  white-space: nowrap; 
+  height: 25px; 
+  background-color: #dedede;
+}
+
+.results { 
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.game { 
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px 0;
+  border: 2px solid #dedede;
+  text-align: center;
+}
+
+.word-entery {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.game button {
+width: 80%;
+  background-color: #FAFAD3;
+  color: black;
+  border-radius: 5px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: bolder;
+}
