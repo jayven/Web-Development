@@ -15,7 +15,7 @@ const items = {
 function itemExisting(itemName) {
     const itemList = Object.values(items);
     for( let item of itemList ) {
-        if(itemName === item.itemName) {
+        if(itemName.toLowerCase() === item.itemName.toLowerCase()) {
             return true;
         }
     }

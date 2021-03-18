@@ -55,7 +55,7 @@
   font-weight: bold;
 }
 
-#list-app .decrease, .increase, .delete-item{
+#list-app .decrease, .increase, .delete-item, .update-item{
   background-color: #FFF0F5;
   color: black;
   border-radius: 5px;

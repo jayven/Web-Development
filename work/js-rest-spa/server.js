@@ -43,24 +43,23 @@ app.post('/items', express.json(), (req, res) => {
 app.patch('/items/:itemid', express.json(), (req, res) => {
 
     const itemId = req.params.itemid;
-    const { quantity } = req.body;
+    const { action } = req.body;
     if(!inventory.items[itemId]) {
         res.status(404).json({ errorCode: 'missing-item' });
         return;
     }
 
-    if(!quantity) {
+    if(!action) {
         res.status(400).json({ errorCode: 'missing-quantity'});
         return;
+    } else {
+        if (action == 'increase') {
+            inventory.items[itemId].quantity++;
+        } else if (action == 'decrease') {
+            inventory.items[itemId].quantity--;
+        } 
+        res.json(Object.values(inventory.items));
     }
-
-    if(isNaN(quantity) || quantity < 0) {
-        res.status(400).json({ errorCode: 'invalid-quantity' });
-        return;
-    }
-
-    inventory.items[itemId].quantity = quantity;
-    res.json(Object.values(inventory.items));
 });
 
 //remove an item
