@@ -1,0 +1,87 @@
+.title {
+  text-align: center;
+  width:100%
+}
+
+.inventory-panel {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.to-add-item {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  width: 200px;
+  text-align: center;
+}
+
+.to-add-quantity {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  width: 200px;
+  text-align: center;
+}
+
+.add-button {
+  width: 30;
+  background-color: #FDF5E6;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.items { 
+  padding: 12px 20px;
+  list-style-type: none;
+}
+
+#list-app .item, .item-quantity {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#list-app .decrease, .increase, .delete-item, .update-item{
+  background-color: #FFF0F5;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#list-app .delete-item {
+	float: right;
+	margin-right: 10px
+}
+
+.inventory-panel {
+	font: sans-serif;
+	width: 600px;
+	max-width: 800px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+
+.items li:hover { 
+  background-color: #FDF5E6;
+}
+
+.inventory-panel li:nth-child(2n+1) {
+	background-color: lightgrey;
+}
