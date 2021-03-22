@@ -50,7 +50,7 @@ app.delete('/session', (req,res) => {
 
 //get the list of items
 app.get('/items', (req, res) => {
-    cconst uid = req.cookies.uid;
+    const uid = req.cookies.uid;
     if(!uid || !items.users[uid]) {
         res.clearCookie('uid');
         res.status(403).json( {errorCode: 'missing-user'});
@@ -60,7 +60,7 @@ app.get('/items', (req, res) => {
 });
 
 //add an item
-app.post('/item', express.json(), (req, res) => {
+app.post('/items', express.json(), (req, res) => {
     const uid = req.cookies.uid;
     const { text } = req.body;
 

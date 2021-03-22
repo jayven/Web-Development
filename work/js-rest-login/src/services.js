@@ -62,13 +62,30 @@ export const fetchAddItems = (text) => {
     });
 };
 
-export const fetchUpdateScore = (score) => {
-    return fetch('/items', {
+export const fetchUpdateScore = (itemId, action) => {
+    return fetch(`/items/${itemId}`, {
         method: 'PATCH',
         headers: new Headers({
             'content-type': 'application/json'
         }),
-        body: JSON.stringify({ score }),
+        body: JSON.stringify({ action }),
+        credentials: 'include',
+    })
+    .catch( () => Promise.reject({ errorCode: 'network-error' }) )
+    .then( (response) => {
+        if(!response.ok) {
+            return response.json().then( (err) => Promise.reject(err) )
+        }
+        return response.json();
+    });
+};
+
+export const fetchDeleteItems = (itemId) => {
+    return fetch(`/items/${itemId}`, {
+        method: 'DELETE',
+        headers: new Headers({
+            'content-type': 'application/json'
+        }),
         credentials: 'include',
     })
     .catch( () => Promise.reject({ errorCode: 'network-error' }) )

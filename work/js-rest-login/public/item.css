@@ -7,7 +7,7 @@ html {
   width:100%
 }
 
-.inventory-panel, .add-item, .item-status-info, .login-status-info, .login-panel, .logout {
+.inventory-panel, .add-item, .item-status-info, .login-status-info, .login-panel, .logout , .sort-button{
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
@@ -33,7 +33,7 @@ html {
   text-align: center;
 }
 
-.add-button, .logout-button , .login-button{
+.add-button, .logout-button , .login-button, .sort-button{
   width: 30;
   background-color: #FDF5E6;
   color: black;

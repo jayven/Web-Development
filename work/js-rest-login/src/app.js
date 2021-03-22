@@ -5,7 +5,8 @@ import {
 	fetchAddItems,
 	fetchLogout,
 	fetchUpdateScore,
-	fetchLoginStatus
+	fetchLoginStatus,
+	fetchDeleteItems
 } from './services';
 
    //inventory list elements
@@ -311,7 +312,8 @@ import {
 	        appState.error = err.errorCode;   
 	        poll(false);
 	        renderPage(inventoryPanel.querySelector('.sort-button').getAttribute('data-button-id'));
-	});
+		});
+	});	
 
 	fetchLoginStatus()
 	.then( (name) => {
@@ -323,6 +325,6 @@ import {
 	})
 	.catch( (err) => {
 	    appState.isLoggedIn = false;
-	    rrenderPage('high-to-low');
+	    renderPage('high-to-low');
 	});
 
