@@ -1,0 +1,95 @@
+html {
+  padding-top: 30px;
+}
+
+.title {
+  text-align: center;
+  width:100%
+}
+
+.inventory-panel, .add-item, .item-status-info, .login-status-info, .login-panel, .logout , .sort-button{
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.login-panel {
+  padding-top: 250px;
+}
+
+.item-status-info {
+  padding-bottom: 50px;
+}
+
+.to-add-item, .rate-item, .user-name {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  width: 200px;
+  text-align: center;
+}
+
+.add-button, .logout-button , .login-button, .sort-button{
+  width: 30;
+  background-color: #FDF5E6;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.items { 
+  padding: 12px 20px;
+  list-style-type: none;
+}
+
+.item, .item-quantity, .item-score {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.decrease, .increase, .delete-item, .update-score {
+  background-color: #FFF0F5;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.item-name {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px
+}
+
+.delete-item {
+	float: right;
+	margin-right: 10px
+}
+
+.inventory-panel {
+	font: sans-serif;
+	width: 800px;
+	max-width: 800px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+
+.items li:hover { 
+  background-color: #FDF5E6;
+}
+
+.inventory-panel li:nth-child(2n+1) {
+	background-color: lightgrey;
+}
