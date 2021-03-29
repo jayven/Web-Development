@@ -191,7 +191,9 @@ recipeList.addEventListener('click', (event) => {
     }
     event.preventDefault();
 
-    fetchRecipeDetails(event.target.dataset.recipeId)
+    const recipeId = event.target.dataset.recipeId;
+    event.preventDefault();
+    fetchRecipeDetails(recipeId)
         .then((recipeDetails) => {
             appState.isHomePage = false;
             appState.recipeDetails = recipeDetails;
@@ -212,19 +214,19 @@ function renderRecipeDetail(recipeDetails) {
     } else {
         recipeDetailPanel.innerHTML = `
             <h2 class="title"> Recipt Details </h2>
-            <div class="recipe-title">
+            <div class="show-recipe-title">
                 <label>Title:</label>
                 <span>${recipeDetails.title}</span>
             </div>
-            <div class="recipe-author">
+            <div class="show-recipe-author">
                 <label>Author:</label>
                 <span>${recipeDetails.author}</span>
             </div>
-            <div class="recipe-ingredients">
+            <div class="show-recipe-ingredients">
                 <label>Ingredients:</label><br/>
                 <span>${recipeDetails.ingredients}</span>
             </div>
-            <div class="recipe-instrcutions">
+            <div class="show-recipe-instructions">
                 <label>Instructions:</label><br/>
                 <span>${recipeDetails.instructions}</span>
             </div>
@@ -257,20 +259,22 @@ function renderNewRecipePanel(show) {
     if (show) {
         newRecipePanel.innerHTML = `
             <h2 class="title"> Add New Recipe </h2>
-            <div>
-                <label>Title: </label><br/>
-                <textarea class="new-recipe-title" placeholder="Please add recipe name"></textarea>
-            </div>
-            <div>
-                <label>Ingredients: </label><br/>
-                <textarea class="new-recipe-ingredients" placeholder="Please add recipe ingredients"></textarea>
-            </div>
-            <div>
-                <label>Instructions: </label><br/>
-                <textarea class="new-recipe-instructions" placeholder="Please add recipe instructions"></textarea>
-            </div>
-            <div>
-                <button class="to-add-recipe">Add</button>
+            <div class="new-recipe-panel">
+                <div>
+                    <label>Title: </label><br/>
+                    <textarea class="new-recipe-title" placeholder="Please add recipe name"></textarea>
+                </div>
+                <div>
+                    <label>Ingredients: </label><br/>
+                    <textarea class="new-recipe-ingredients" placeholder="Please add recipe ingredients"></textarea>
+                </div>
+                <div>
+                    <label>Instructions: </label><br/>
+                    <textarea class="new-recipe-instructions" placeholder="Please add recipe instructions"></textarea>
+                </div>
+                <div>
+                    <button class="to-add-recipe">Add</button>
+                </div>
             </div>
         `;
     } else {

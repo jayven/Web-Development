@@ -386,7 +386,9 @@ recipeList.addEventListener('click', function (event) {
   }
 
   event.preventDefault();
-  (0,_services__WEBPACK_IMPORTED_MODULE_0__.fetchRecipeDetails)(event.target.dataset.recipeId).then(function (recipeDetails) {
+  var recipeId = event.target.dataset.recipeId;
+  event.preventDefault();
+  (0,_services__WEBPACK_IMPORTED_MODULE_0__.fetchRecipeDetails)(recipeId).then(function (recipeDetails) {
     appState.isHomePage = false;
     appState.recipeDetails = recipeDetails;
     appState.error = '';
@@ -402,7 +404,7 @@ function renderRecipeDetail(recipeDetails) {
   if (Object.keys(recipeDetails).length === 0) {
     recipeDetailPanel.innerHTML = "";
   } else {
-    recipeDetailPanel.innerHTML = "\n            <h2 class=\"title\"> Recipt Details </h2>\n            <div class=\"recipe-title\">\n                <label>Title:</label>\n                <span>".concat(recipeDetails.title, "</span>\n            </div>\n            <div class=\"recipe-author\">\n                <label>Author:</label>\n                <span>").concat(recipeDetails.author, "</span>\n            </div>\n            <div class=\"recipe-ingredients\">\n                <label>Ingredients:</label><br/>\n                <span>").concat(recipeDetails.ingredients, "</span>\n            </div>\n            <div class=\"recipe-instrcutions\">\n                <label>Instructions:</label><br/>\n                <span>").concat(recipeDetails.instructions, "</span>\n            </div>\n        ");
+    recipeDetailPanel.innerHTML = "\n            <h2 class=\"title\"> Recipt Details </h2>\n            <div class=\"show-recipe-title\">\n                <label>Title:</label>\n                <span>".concat(recipeDetails.title, "</span>\n            </div>\n            <div class=\"show-recipe-author\">\n                <label>Author:</label>\n                <span>").concat(recipeDetails.author, "</span>\n            </div>\n            <div class=\"show-recipe-ingredients\">\n                <label>Ingredients:</label><br/>\n                <span>").concat(recipeDetails.ingredients, "</span>\n            </div>\n            <div class=\"show-recipe-instructions\">\n                <label>Instructions:</label><br/>\n                <span>").concat(recipeDetails.instructions, "</span>\n            </div>\n        ");
   }
 }
 
@@ -426,7 +428,7 @@ backHomepage.addEventListener('click', function (event) {
 
 function renderNewRecipePanel(show) {
   if (show) {
-    newRecipePanel.innerHTML = "\n            <h2 class=\"title\"> Add New Recipe </h2>\n            <div>\n                <label>Title: </label><br/>\n                <textarea class=\"new-recipe-title\" placeholder=\"Please add recipe name\"></textarea>\n            </div>\n            <div>\n                <label>Ingredients: </label><br/>\n                <textarea class=\"new-recipe-ingredients\" placeholder=\"Please add recipe ingredients\"></textarea>\n            </div>\n            <div>\n                <label>Instructions: </label><br/>\n                <textarea class=\"new-recipe-instructions\" placeholder=\"Please add recipe instructions\"></textarea>\n            </div>\n            <div>\n                <button class=\"to-add-recipe\">Add</button>\n            </div>\n        ";
+    newRecipePanel.innerHTML = "\n            <h2 class=\"title\"> Add New Recipe </h2>\n            <div class=\"new-recipe-panel\">\n                <div>\n                    <label>Title: </label><br/>\n                    <textarea class=\"new-recipe-title\" placeholder=\"Please add recipe name\"></textarea>\n                </div>\n                <div>\n                    <label>Ingredients: </label><br/>\n                    <textarea class=\"new-recipe-ingredients\" placeholder=\"Please add recipe ingredients\"></textarea>\n                </div>\n                <div>\n                    <label>Instructions: </label><br/>\n                    <textarea class=\"new-recipe-instructions\" placeholder=\"Please add recipe instructions\"></textarea>\n                </div>\n                <div>\n                    <button class=\"to-add-recipe\">Add</button>\n                </div>\n            </div>\n        ";
   } else {
     newRecipePanel.innerHTML = "";
   }
