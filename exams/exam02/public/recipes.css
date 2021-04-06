@@ -1,0 +1,109 @@
+html {
+    padding-top: 30px;
+}
+
+h2, .title {
+    text-align: center;
+    width:100%
+}
+
+.login{
+    height: 60px;
+    margin-top: 20px;;
+    margin-right: 50px;
+    border: 0px;
+}
+.status {
+    padding: 20px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-button, .logout-button, .back-home-button, .new-recipe-button, .to-login-button, .to-add-recipe {
+    background-color: #FDF5E6;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-info {
+    padding: 10px;
+}
+
+
+.username {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipes-list {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #dedede;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+.recipes {
+    padding: 12px 20px;
+    list-style-type: none;
+}
+
+.recipe-info:hover {
+    background-color: #FDF5E6;
+}
+
+.show-recipe-title, .show-recipe-author, .show-recipe-ingredients, .show-recipe-instructions {
+    padding:20px;
+    width: 600px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-author {
+    float: right;
+    margin-right: 30px
+}
+
+.new-recipe-panel{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.new-recipe-title, .new-recipe-ingredients, .new-recipe-instructions {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
