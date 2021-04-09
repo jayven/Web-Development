@@ -1,0 +1,44 @@
+.guess-app {
+	text-align: center;
+}
+
+.title {
+	padding-top: 10%;
+  text-align: center;
+  width:100%;
+  font-family: fantasy;
+}
+
+.guess-game {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.guess-game input {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.guess-game button {
+  width: 30;
+  background-color: #FDF5E6;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.result {
+	font-style: bold;
+}
