@@ -1,0 +1,55 @@
+.app {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #dedede;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y:auto;
+    overflow-x:auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.dropdown {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.page label, .show-per-page, .title, .dropdown-label {
+    font-weight: bold;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.page button, .previous-button, .next-button {
+    background-color: #FDF5E6;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.facts-list {
+    text-align: left;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
