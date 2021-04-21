@@ -41,6 +41,7 @@
 ### Add/Edit Task
 * User can add/edit workout task informations on the task page
   - task name & duration is required
+  - choose days to add to weekly record (required otherwise task won't show on page)
   - click submit button to finsh add/edit task
   - click cancel button to back to Weekly Record page
 
