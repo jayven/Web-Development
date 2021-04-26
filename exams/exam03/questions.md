@@ -155,15 +155,17 @@ This method is fast to implement, using a browser inspector is a more powerful a
 ## Q13: How many times would the below code render (if there are no changes from outside this code), and what is the rendered output for each of those times, and what triggered (caused) the render?  Assume something DOES cause this to be rendered at least once.
 ```
 import { useState } from 'react';
-  function Demo() {
-    const [count, setCount] = useState(0);
-    if (!count) {
-      setCount(1);
-    }
-    return (
-      <div>{count}</div>
-    );
+
+
+function Demo() { 
+  const [count, setCount] = useState(0);
+  if (!count) { 
+    setCount(1);
   }
+  return (
+    <div>{count}</div>
+  );
+}
 ```
 A: React state automatically re-render whenever there is a change in their state or props. In this sample code, we render twice.
 -We declare a state variable called `count` and set it to `0`. React will remember its current value between re-renders (initial render). (here, count = 0)
