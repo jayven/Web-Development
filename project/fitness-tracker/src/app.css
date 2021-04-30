@@ -1,0 +1,295 @@
+.logo {
+  text-align: center;
+}
+
+.app-logo {
+  height: 200px;
+  border-radius: 5px;
+}
+
+.login-panel {
+  width: 70%;
+  padding: 50px 80px;
+  margin: 100px auto auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-panel h3 {
+  display: block;
+  text-align: center;
+}
+
+.username {
+  width: 55%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.to-login {
+  width: 35%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  background-color: #FFE4E1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.p1 {
+  color: black;
+  font-family: 'Raleway',sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: left;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.p2 {
+  color: darkgray;
+  font-family: 'Raleway',sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.sort-panel {
+  float: right;
+  margin-right: 25px;
+}
+
+.sort-panel label {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.sort-panel input:checked + label {
+  color: #F08080;
+}
+
+/* Radio element, when checked */
+.sort-panel input [type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+.tasks-panel {
+  height: 450px;
+  padding: 5px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-y:auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.tasks-panel h5 {
+  color: darkgray;
+}
+
+.tasks-panel div {
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+  overflow-y:auto;
+}
+
+.task-list {
+  border-radius: 5px;
+  color: black;
+  padding: 0;
+}
+
+.task-list li {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 75px;
+  padding: 3px;
+  overflow-y:auto;
+  overflow-x:auto;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.task-list li:nth-child(1) {
+  background: #E6E6FA;
+}
+
+.task-list li:nth-child(2) {
+  background: #FFFACD;
+}
+
+.task-list li:nth-child(3) {
+  background: #F5FFFA;
+}
+
+.task-list li:nth-child(4) {
+  background: #FFFAF0;
+}
+
+.name, .duration {
+  padding: 4px;
+  display: inline-block;
+  *display: inline;
+  font-size: small;
+}
+
+.name {
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.to-delete-task {
+  margin: 5px;
+  border-radius: 5px;
+  height: 23px;
+  font-size: 12px;
+}
+
+
+
+
+
+.task-details {
+  margin: 40px 120px 40px 120px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+  display: block;
+  text-align: center;
+}
+
+.title {
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-details div {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.task-details form {
+  display: inline-block;
+  text-align: left;
+}
+
+.task-name, .reps, .details {
+  width: 100%;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 40px;
+  outline: none;
+  box-shadow: lightgray 0px 2px 5px;
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.task-duration{
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 40px;
+  outline: none;
+  box-shadow: lightgray 0px 2px 5px;
+  font-family: sans-serif;
+  position: relative;
+  align-items: center;
+}
+
+.days-options {
+  margin-left: 15px;
+  height: 25px;
+}
+
+.submit ,.to-back-home{
+  background-color: #FFE4E1;
+  text-align: center;
+  border-radius: 5px;
+  height: 25px;
+  font-size: 15px;
+  float: right
+}
+
+.main-page {
+  margin: 30px;
+  text-align: right;
+}
+
+.to-add-task {
+  background-color: #FFE4E1;
+  color: black;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.header{
+  background-color: #F0F8FF;
+  padding: 10px;
+  height: 30px;
+}
+
+.header ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.header ul li{
+  display:inline-block;
+  margin-right: 15px;
+}
+
+.header li{
+  list-style-type: none;
+  color: black;
+  font-family: sans-serif bold;
+}
+
+.header span{
+  margin-top: 10px;
+  float: right;
+}
+
+.to-logout {
+  background-color: #FFE4E1;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.header-logo {
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  position: relative;
+}
+
+footer {
+  font-size: 10px;
+  padding: 15px 15px;
+  text-align: center;
+  background-color: #F0F8FF;
+  color: #808080;
+}
+
+.footer-info li{
+  display: inline-block;
+  margin-right: 15px;
+  list-style: none;
+}
+
